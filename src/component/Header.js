@@ -1,12 +1,13 @@
-import "./Header.css";
+import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <div className="header">
-      <div>
-        <p>Jaroenchai Saejang</p>
+    
+      <div className={styles.header}>
+        <img className={styles.image_Header} src="../image/jang.jpg" />
+        <p className={styles.text}>Jaroenchai Saejang</p>
       </div>
-    </div>
+   
   );
 }
 
