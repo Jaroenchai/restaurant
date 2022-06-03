@@ -1,4 +1,3 @@
-import { useState } from "react";
 import json from "../data.json";
 import "./dataMap.css";
 
@@ -19,6 +18,7 @@ function Data() {
             <p className="rating">★{item.rating}</p>
           </div>
           <div className="img-detail">
+          <img src='../image/jang.jpg' />
             <img className="img-food border-left" src={item.images[0]} />
             <img className="img-food" src={item.images[1]} />
             <img className="img-food border-right" src={item.images[2]} />
