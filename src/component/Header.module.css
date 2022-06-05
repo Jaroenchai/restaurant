@@ -1,5 +1,5 @@
 .header {
-  background: rgb(23, 42, 82);
+  background: rgb(16, 41, 97);
   color: white;
   padding-top: 1px;
   padding-right: 15px;
@@ -11,6 +11,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .image_Header {
@@ -29,5 +30,7 @@
   
   padding: 0px 15px;
 }
+
+
 
 

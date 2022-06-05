@@ -1,10 +1,18 @@
 import json from "../data.json";
 import "./dataMap.css";
+import { useContext } from 'react'
+import {AuthContext} from '../App'
 
 function Data() {
+  const {searchText} = useContext(AuthContext);
+  
+  const filterItem = json.filter((json)=>{
+    return json.name.toLocaleLowerCase().includes(searchText)
+  })
   const items = (
-    json.map((item, index) => {
+    filterItem.map((item, index) => {
       return (
+        
         <div className="content" key={index}>
           <div className="name-res">
             <img className="img-bk" src={item.profile_image_url} />
