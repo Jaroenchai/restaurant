@@ -4,6 +4,8 @@ import Header from "./component/Header";
 import PlaceList from "./component/PlaceList";
 import { Routes, Route } from "react-router-dom";
 import React, {useState} from "react";
+import ResDtail from "./component/ResDtail";
+import PageError404 from "./component/PageEror404";
 
 const AuthContext = React.createContext();
 
@@ -11,12 +13,12 @@ function App() {
   const [searchText,setsearchText] = useState('')
   return (
     <AuthContext.Provider value={{searchText,setsearchText}}>
-      <div className="head-app">
       <Header />
       <Routes>
         <Route path="/" element={<div className="app"><PlaceList /><Datares/></div>} exact />
+        <Route path="/post/:postId" element={<ResDtail/>}/>
+        <Route path="*" element={<PageError404/>}/>
       </Routes>
-    </div>
     </AuthContext.Provider>
     
   );

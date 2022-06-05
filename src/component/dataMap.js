@@ -2,11 +2,12 @@ import json from "../data.json";
 import "./dataMap.css";
 import { useContext } from 'react'
 import {AuthContext} from '../App'
+import { Link } from "react-router-dom";
 
 function Data() {
   const {searchText} = useContext(AuthContext);
   
-  const filterItem = json.filter((json)=>{
+  const filterItem = json.filter( (json)=>{
     return json.name.toLocaleLowerCase().includes(searchText)
   })
   const items = (
@@ -16,8 +17,8 @@ function Data() {
         <div className="content" key={index}>
           <div className="name-res">
             <img className="img-bk" src={item.profile_image_url} />
-            <div className="text">
-              {item.name}
+            <div>
+              <Link className="text" to={`/post/${item.id}`}>{item.name}</Link>
               <div>
                 {item.operation_time[0].time_open}{" "}
                 {item.operation_time[0].time_close}

@@ -10,7 +10,12 @@ function PlaceList() {
     <div className={styles.list}>
       <p className={styles.text}>Place List</p>
       <div className={styles.search}>
-          {/* <input className={styles.searchtext} type='text'></input> */}
+          {/* <select value={searchText} onChange={(event)=>{setsearchText(event.target.value.toLocaleLowerCase())}}>
+            <option value='' selected>All</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="cafe">Cafe</option>
+            <option value="bakery">Bakery</option>
+          </select> */}
           <input className={styles.searchtext} placeholder='Search' type='text' value={searchText} onChange={(event)=>{setsearchText(event.target.value.toLocaleLowerCase())}}></input>
       </div>
     </div>
