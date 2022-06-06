@@ -10,8 +10,7 @@ function Data() {
   const filterItem = json.filter( (json)=>{
     return json.name.toLocaleLowerCase().includes(searchText)
   })
-  const items = (
-    filterItem.map((item, index) => {
+  const items = filterItem.map((item, index) => {
       return (
         
         <div className="content" key={index}>
@@ -35,7 +34,7 @@ function Data() {
         </div>
       );
     })
-  );
+  
 
   return <div className="grid">{items}</div>;
 }

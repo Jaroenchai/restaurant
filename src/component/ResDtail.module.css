@@ -1,4 +1,84 @@
-.dtail{
-    margin-top: 75px;
-    text-decoration: none;
+.dtail {
+  margin-top: 90px;
+  text-decoration: none;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+  border-radius: 15px;
+
+  background-color: rgb(121, 166, 209);
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-items: stretch;
+  align-items: stretch;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.mainImg {
+  width: 100%;
+  height: 450px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 99;
+}
+
+.text {
+  font-size: 18px;
+  margin-top: -4px;
+  padding-left: 20px;
+  
+  padding-top: 1px;
+
+  
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.textHead {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.star{
+  color: rgb(43, 74, 139);
+  font-size: 18px;
+  padding-top: 12px;
+  padding-right: 20px;
+
+  
+}
+
+.textDtail{
+  margin-left: 50px;
+  font-size: 16px;
+  
+  
+}
+.textheaddtail{
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.textunder{
+  font-size: 18px;
+  margin-top: -4px;
+  padding-left: 20px;
+  
+  padding-top: 1px;
+  
+  
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-items: stretch;
+  align-items: stretch;
+  
+}
+
+.place{
+  border-radius: 15px;
+  background-color: white;
 }
