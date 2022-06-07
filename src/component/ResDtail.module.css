@@ -91,7 +91,7 @@
   object-fit: cover;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 400px) {
   .dtail {
     grid-template-columns: 1fr;
     margin-left: 10%;
@@ -101,37 +101,18 @@
   .textDtail {
     font-size: 14px;
   }
-}
-
-@media screen and (min-width: 750px) {
-  .dtail {
-    grid-template-columns: 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .textDtail {
-    font-size: 14px;
+  .placeRight{
+    margin-top: -80px;
   }
 }
 
-@media screen and (min-width: 860px) {
-  .dtail {
-    grid-template-columns: 1fr;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
 
-  .textDtail {
-    font-size: 14px;
-  }
-}
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1400px) {
   .dtail {
     grid-template-columns: 55% 45%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   .textDtail {

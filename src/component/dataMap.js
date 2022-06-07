@@ -19,7 +19,7 @@ function Data() {
             <img className="img-bk" src={item.profile_image_url} />
             <div>
               <Link className="text" to={`/${item.id}`}>{item.name}</Link>
-              <div>
+              <div className="text-time">
                 {item.operation_time[0].time_open}{" "}
                 {item.operation_time[0].time_close}
               </div>

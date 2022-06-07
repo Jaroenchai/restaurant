@@ -1,6 +1,11 @@
+
+
+
+
+
 .grid {
   display: grid;
-  
+
   grid-auto-rows: max-content;
   grid-auto-flow: dense;
 
@@ -10,8 +15,6 @@
   object-fit: cover;
   width: 100%;
   padding-top: 45px;
-  
-  
 }
 
 .content {
@@ -31,12 +34,9 @@
 }
 
 .img-bk {
-  height: 55px;
-  width: 60px;
+  
   border-radius: 10px;
   object-fit: cover;
- 
-  
 }
 .name-res {
   display: grid;
@@ -55,55 +55,79 @@
   margin-bottom: -2rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  
 }
 
 .img-food {
   margin-top: 1.2rem;
-  width: 90px;
-  height: 75px;
-  object-fit: cover;
   
+  object-fit: cover;
 }
 
-.border-left{
+.border-left {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   object-fit: cover;
-  
 }
 
-.border-right{
+.border-right {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   object-fit: cover;
-  
 }
 
 .text {
-  font-size: 18px;
+ 
   text-decoration: none;
   color: rgb(39, 71, 158);
 }
 
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 400px) {
   .grid {
     grid-template-columns: 1fr;
   }
-  
-}
-
-@media screen and (min-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
+  .img-food {
+    width: 165px;
+    height: 150px;
+  }
+  .img-bk {
+    height: 105px;
+    width: 110px;
+  }
+  .text{
+    font-size: 26px;
+  }
+  .text-time{
+    font-size: 26px;
+  }
+  .rating{
+    font-size: 26px;
   }
   
 }
 
-@media screen and (min-width: 1220px) {
+
+
+@media screen and (min-width: 1000px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .img-food {
+   width: 90px;
+  height: 75px;
+  }
+  .img-bk {
+    height: 55px;
+  width: 60px;
+  }
+  .text{
+     font-size: 18px;
+  }
+  .text-time{
+    font-size: 18px;
+  }
+  .rating{
+     font-size: 18px;
   }
   
 }

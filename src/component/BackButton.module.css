@@ -1,9 +1,7 @@
 .container {
   position: relative;
-  
+
   margin-top: 100px;
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 .btn {
@@ -48,4 +46,16 @@ svg {
   text-decoration: none;
 }
 
+@media screen and (min-width: 400px) {
+  .container {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
 
+@media screen and (min-width: 1400px) {
+  .container {
+    margin-left: 17%;
+    margin-right: 17%;
+  }
+}
