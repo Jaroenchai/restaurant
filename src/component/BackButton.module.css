@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  
+  margin-top: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  background-color: rgb(42, 91, 138);
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: rgb(143, 223, 255);
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 0.55s ease-in-out;
+}
+
+.btn:hover {
+  transition: 0.5s ease-in-out;
+  background: rgb(16, 41, 97);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: rgb(62, 93, 139);
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.text {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+

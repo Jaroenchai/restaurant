@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import React, {useState} from "react";
 import ResDtail from "./component/ResDtail";
 import PageError404 from "./component/PageEror404";
+import BackButtton from "./component/BackButton";
 
 const AuthContext = React.createContext();
 
@@ -16,7 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<div className="app"><PlaceList /><Datares/></div>} exact />
-        <Route path="/post/:postId" element={<ResDtail/>}/>
+        <Route path="/:postId" element={<><BackButtton/><ResDtail/></> }/>
         <Route path="*" element={<PageError404/>}/>
       </Routes>
     </AuthContext.Provider>

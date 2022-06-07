@@ -8,7 +8,7 @@ function PlaceList() {
   return (
    
     <div className={styles.list}>
-      <p className={styles.text}>Place List</p>
+      <p className={styles.text}>Place&nbsp;List</p>
       <div className={styles.search}>
           {/* <select value={searchText} onChange={(event)=>{setsearchText(event.target.value.toLocaleLowerCase())}}>
             <option value='' selected>All</option>

@@ -5,7 +5,8 @@ import {AuthContext} from '../App'
 import { Link } from "react-router-dom";
 
 function Data() {
-  const {searchText} = useContext(AuthContext);
+  const {searchText,setsearchText } = useContext(AuthContext);
+  
   
   const filterItem = json.filter( (json)=>{
     return json.name.toLocaleLowerCase().includes(searchText)
@@ -17,7 +18,7 @@ function Data() {
           <div className="name-res">
             <img className="img-bk" src={item.profile_image_url} />
             <div>
-              <Link className="text" to={`/post/${item.id}`}>{item.name}</Link>
+              <Link className="text" to={`/${item.id}`}>{item.name}</Link>
               <div>
                 {item.operation_time[0].time_open}{" "}
                 {item.operation_time[0].time_close}

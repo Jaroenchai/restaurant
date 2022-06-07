@@ -28,7 +28,7 @@ function ResDtail() {
 
   return (
     <div className={styles.dtail}>
-      <div className={styles.place}>
+      <div className={styles.placeLeft}>
         <img className={styles.mainImg} src={items[0].profile_image_url} />
         <div className={styles.text}>
           <p className={styles.textHead}>{items[0].name}</p>
@@ -49,7 +49,12 @@ function ResDtail() {
           <div className={styles.textDtail}>{openTime}</div>
         </div>
       </div>
-      <p>asd</p>
+      <div className={styles.placeRight}>
+        <h3>Images</h3>
+        <img className={styles.imagesD} src={items[0].images[0]} />
+        <img className={styles.imagesD} src={items[0].images[1]} />
+        <img className={styles.imagesD} src={items[0].images[2]} />
+      </div>
     </div>
   );
 }
